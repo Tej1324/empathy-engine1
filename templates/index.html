@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empathy Engine</title>
+</head>
+<body>
+    <h1>🎙️ The Empathy Engine</h1>
+
+    <!-- Simple UI to quickly test emotion-aware speech -->
+    <form method="POST">
+        <textarea
+            name="text"
+            rows="4"
+            cols="60"
+            placeholder="Enter text here..."
+            required
+        ></textarea>
+        <br><br>
+        <button type="submit">Generate Speech</button>
+    </form>
+
+    {% if emotion %}
+        <h3>Detected Emotion: {{ emotion }}</h3>
+        <h4>Emotion Intensity: {{ intensity }}</h4>
+
+        <!-- Audio player for instant feedback -->
+        <audio controls>
+            <source src="{{ audio_file }}" type="audio/wav">
+            Your browser does not support the audio element.
+        </audio>
+    {% endif %}
+</body>
+</html>
