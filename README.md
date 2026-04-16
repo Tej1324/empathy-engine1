@@ -172,7 +172,7 @@ Run the app and open:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Tej1324/Empathy-Engine.git
+git clone https://github.com/Tej1324/empathy-engine1
 cd Empathy-Engine
 ```
 
@@ -254,7 +254,7 @@ Examples:
 
 GitHub repository:
 
-`https://github.com/Tej1324/Empathy-Engine`
+`https://github.com/Tej1324/empathy-engine1`
 
 This repository contains:
 
